@@ -84,7 +84,7 @@ function isClickBefore(index) {
 
 function loading() {
     $(window).on('load',function(){
-        $("#load").fadeOut(1500);
+        $("#load").fadeOut(1000);
     });
 }
 
