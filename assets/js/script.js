@@ -17,37 +17,58 @@ let player = 1;
 let x = `<i class="fa-solid fa-xmark fa-6x"></i>`;
 let o = `<i class="fa-solid fa-o fa-5x"></i>`;
 
-let xoArray = ["","","","","","","","",""];
+let xoArray = ["", "", "", "", "", "", "", "", ""];
 
 const POSSIBILITY = [
-    [1,2,3],
-    [5,6,6],
-    [7,8,9],
-    [1,4,7],
-    [2,5,8],
-    [3,6,9],
-    [1,5,9],
-    [3,5,7]
+    [1, 2, 3],
+    [5, 6, 6],
+    [7, 8, 9],
+    [1, 4, 7],
+    [2, 5, 8],
+    [3, 6, 9],
+    [1, 5, 9],
+    [3, 5, 7]
 ];
+
+currentPlayer();
 
 $("#grid-sec > div").click(function () {
     console.log($(this).attr("id"));
     let id = $(this).attr("id");
+    let indexId = id.split("c")[1];
+    indexId = Number(indexId) - 1;
+
     if (player == 1) {
         $(`#${id}`).append(x);
-        let indexId = id.split("c")[1]; 
-        indexId = Number(indexId)-1;
-        xoArray[indexId]="X";
+        xoArray[indexId] = "X";
         player = 2;
-    }else{
+    } else {
         $(`#${id}`).append(o);
-        let indexId = id.split("c")[1]; 
-        indexId = Number(indexId)-1;
-        xoArray[indexId]="O";
+        xoArray[indexId] = "O";
         player = 1;
     }
-
+    currentPlayer();
 });
+
+function currentPlayer() {
+    if (player == 1) {
+        let boxX=$("#main_div > div:eq(0)");
+        boxX.cssImportant("border-color","#fbc531","important");
+        boxX.cssImportant("border-width","5px","important");
+
+        let boxO=$("#main_div > div:eq(1)");
+        boxO.cssImportant("border-color","#fbc531","important");
+        boxO.cssImportant("border-width","1px","important");
+    } else {
+        let boxO=$("#main_div > div:eq(1)");
+        boxO.cssImportant("border-color","#fbc531","important");
+        boxO.cssImportant("border-width","5px","important");
+
+        let boxX=$("#main_div > div:eq(0)");
+        boxX.cssImportant("border-color","#fbc531","important");
+        boxX.cssImportant("border-width","1px","important");
+    }
+}
 
 console.log($("#grid-sec").children());
 
