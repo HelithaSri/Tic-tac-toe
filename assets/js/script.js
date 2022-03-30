@@ -30,6 +30,7 @@ const POSSIBILITY = [
     [3, 5, 7]
 ];
 
+loading();
 currentPlayer();
 
 $("#grid-sec > div").click(function () {
@@ -79,6 +80,12 @@ function isClickBefore(index) {
     } else {
         return true;
     }
+}
+
+function loading() {
+    $(window).on('load',function(){
+        $("#load").fadeOut(1500);
+    });
 }
 
 console.log($("#grid-sec").children());
