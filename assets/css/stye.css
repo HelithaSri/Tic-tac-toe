@@ -84,6 +84,13 @@
 .col {
   /* background-color: #e1b12c; */
   /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i{
+  position: absolute;
 }
 
 .col:nth-child(1) {
