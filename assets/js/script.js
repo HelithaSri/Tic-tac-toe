@@ -33,7 +33,7 @@ const POSSIBILITY = [
 currentPlayer();
 
 $("#grid-sec > div").click(function () {
-    console.log($(this).attr("id"));
+    // console.log($(this).attr("id"));
     let id = $(this).attr("id");
     let indexId = id.split("c")[1];
     indexId = Number(indexId) - 1;
