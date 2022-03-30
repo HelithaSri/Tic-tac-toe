@@ -1,10 +1,16 @@
-* {
-  color: #f5f6fa;
-}
-
 :root {
   --grid-b-color: #7f8fa6;
   --grid-b-pix: 3px;
+}
+
+* {
+  color: #f5f6fa;
+  font-size: 20px;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 50px;
 }
 
 #main-sec {
@@ -30,26 +36,42 @@
   background-color: #192a56;
   border: 1px solid #e1b12c;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  
 }
 
 #main_div > button {
-    margin: 10px;
-    width: 150px;
-    height: 50px;
-    background-color: #192a56;
-    border: 1px solid #e1b12c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  /* border: 1px solid #e1b12c; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+#btnReset {
+  background-color: #e84118;
+}
+
+#btnReset:hover {
+  background-color: #c23616;
+}
+
+#btnNext {
+  background-color: #4cd137;
+  color: #000000;
+}
+
+#btnNext:hover {
+  background-color: #44bd32;
+}
 
 #grid-sec {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: grid;
   grid-template-columns: auto auto auto;
   /* border: 1px solid red; */
@@ -110,4 +132,11 @@
 .col:nth-child(9) {
   border-left: var(--grid-b-pix) solid var(--grid-b-color);
   border-top: var(--grid-b-pix) solid var(--grid-b-color);
+}
+
+#lblWon {
+  font-size: x-large;
+  font-weight: 500;
+  font-style: oblique;
+  font-variant: small-caps;
 }
