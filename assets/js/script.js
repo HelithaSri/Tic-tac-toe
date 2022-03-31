@@ -54,6 +54,10 @@ $("#grid-sec > div").click(function () {
     currentPlayer();
 });
 
+$("#btnReset").click(function(){
+    reset();
+});
+
 function currentPlayer() {
     if (player == 1) {
         let boxX = $("#main_div > div:eq(0)");
@@ -86,6 +90,15 @@ function loading() {
     $(window).on('load',function(){
         $("#load").fadeOut(1000);
     });
+}
+
+function reset() {
+    $("#scoreX").text("-");
+    $("#scoreO").text("-");
+    xoArray = ["", "", "", "", "", "", "", "", ""];
+    $("#grid-sec > div").children().remove()
+    player=1;
+    currentPlayer();
 }
 
 console.log($("#grid-sec").children());
