@@ -141,7 +141,7 @@ function z() {
     for (let i = 0; i < xoArray.length; i++) {
         if (xoArray[i] == "") {
             ab++;
-            console.log(ab);
+            // console.log(ab);
             break;
         } else {
             ab = -1;
@@ -155,28 +155,28 @@ function z() {
         } */
     }
     if (ab == -1) {
-        winD++;
+        // winD++;
         return "pD";
     }
 
 }
 
-let winX = -1;
+/* let winX = -1;
 let winO = -1;
-let winD = -1;
+let winD = -1; */
 
 function check() {
     for (let i = 0; i < POSSIBILITY.length; i++) {
         if (xoArray[POSSIBILITY[i][0]] === "X" && xoArray[POSSIBILITY[i][1]] === "X" && xoArray[POSSIBILITY[i][2]] === "X") {
-            console.log("y");
-            winX++;
+            // console.log("y");
+            // winX++;
             return "pX";
-            break;
+            // break;
         } else if ((xoArray[POSSIBILITY[i][0]] === "O" && xoArray[POSSIBILITY[i][1]] === "O" && xoArray[POSSIBILITY[i][2]] === "O")) {
-            console.log("g");
-            winO++;
+            // console.log("g");
+            // winO++;
             return "pO";
-            break;
+            // break;
         } /* else if(z()){
             console.log("abcd");
             return "pD";//Draw
