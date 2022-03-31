@@ -1,21 +1,22 @@
 ## 🔗 **Links**
-- Game Link : [Tac-Tic-Toe](https://helithasri.github.io/Tic-tac-toe/)
+- Game Link : [Tac-Tic-Toe 🎮](https://helithasri.github.io/Tic-tac-toe/)
 
 ## 📸 **Screenshots**
 
 ![Loading Screen Gif](assets/screenshots/1.gif)
 
-![Loading Screen Gif](assets/screenshots/1.png)
+![Several screenshots of the game](assets/screenshots/1.png)
 
-![Loading Screen Gif](assets/screenshots/2.png)
+![Several screenshots of the game](assets/screenshots/2.png)
 
-![Loading Screen Gif](assets/screenshots/3.png)
+![Several screenshots of the game](assets/screenshots/3.png)
 
-![Loading Screen Gif](assets/screenshots/4.png)
+![Several screenshots of the game](assets/screenshots/4.png)
 
-![Loading Screen Gif](assets/screenshots/5.png)
+![Several screenshots of the game](assets/screenshots/5.png)
 
 ## 👨‍💻 **Tech/framework used**
+
 - Html
 - Css
 - Javascript
