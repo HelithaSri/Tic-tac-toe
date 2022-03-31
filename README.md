@@ -25,4 +25,4 @@
 
 <!-- <p> #### Developed by Helitha Sri ©-2022 </p> -->
 
-<h4 align="center"><b>Developed by Helitha Sri ❤</b></h4>
+<h4 align="center"><b>Developed by <a href="https://www.linkedin.com/in/helithasri/">Helitha Sri</a> ❤</b></h4>
