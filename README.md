@@ -22,7 +22,7 @@
 - jQuery
 - Fontawesome
 - bootstrap
-- 
+
 <!-- <p> #### Developed by Helitha Sri ©-2022 </p> -->
 
 <h4 align="center"><b>Developed by Helitha Sri ❤</b></h4>
