@@ -182,3 +182,145 @@ i {
   border-left: var(--grid-b-pix) solid var(--grid-b-color);
   border-top: var(--grid-b-pix) solid var(--grid-b-color);
 }
+
+@media all and (min-width: 320px) and (max-width: 375px){
+
+  #load > img {
+    width: 50%;
+  }
+
+  #title {
+    font-size: 45px;
+  }
+
+  #main_div {
+    font: normal bold 15px "Noto Sans", sans-serif;
+  }
+
+  #main_div > div {
+    width: 125px;
+    height: 60px;
+  }
+
+  #grid-sec {
+    width: 250px;
+    height: 250px;
+    font-size: 10px;
+  }
+
+  #lblWon {
+    font: normal bold 20px "Noto Sans", sans-serif;
+  }
+
+  #main_btn-div > button {
+    font: normal bold 16px/1 "Noto Sans", sans-serif;
+  }
+
+}
+
+@media all and (min-width: 375px) and (max-width: 425px){
+
+  #load > img {
+    width: 50%;
+  }
+
+  #title {
+    font-size: 45px;
+  }
+
+  #main_div {
+    font: normal bold 15px "Noto Sans", sans-serif;
+  }
+
+  #main_div > div {
+    width: 125px;
+    height: 60px;
+  }
+
+  #grid-sec {
+    width: 250px;
+    height: 250px;
+    font-size: 10px;
+  }
+
+  #lblWon {
+    font: normal bold 20px "Noto Sans", sans-serif;
+  }
+
+  #main_btn-div > button {
+    font: normal bold 16px/1 "Noto Sans", sans-serif;
+  }
+
+}
+
+@media all and (min-width: 425px) and (max-width: 768px){
+
+  #load > img {
+    width: 50%;
+  }
+
+  #title {
+    font-size: 45px;
+  }
+
+  #main_div {
+    font: normal bold 15px "Noto Sans", sans-serif;
+  }
+
+  #main_div > div {
+    width: 125px;
+    height: 60px;
+  }
+
+  #grid-sec {
+    width: 250px;
+    height: 250px;
+    font-size: 10px;
+  }
+
+  #lblWon {
+    font: normal bold 20px "Noto Sans", sans-serif;
+  }
+
+  #main_btn-div > button {
+    font: normal bold 16px/1 "Noto Sans", sans-serif;
+  }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px){
+
+  #load > img {
+    width: 25%;
+  }
+
+  #title {
+    font-size: 65px;
+  }
+
+  #main_div {
+    font: normal bold 20px "Noto Sans", sans-serif;
+  }
+
+  #main_div > div {
+    width: 160px;
+    height: 70px;
+  }
+
+  #grid-sec {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 420px;
+    height: 420px;
+    font-size: 15px;
+  }
+
+  #lblWon {
+    font: normal bold 25px "Noto Sans", sans-serif;
+  }
+
+  #main_btn-div > button {
+    font: normal bold 20px/1 "Noto Sans", sans-serif;
+  }
+
+}
