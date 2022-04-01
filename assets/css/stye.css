@@ -324,3 +324,42 @@ i {
   }
 
 }
+
+@media all and (orientation: landscape) and (min-width: 765px){
+  #load > img {
+    width: 25%;
+  }
+
+  #title {
+    font-size: 30px;
+  }
+
+  #main_div {
+    font: normal bold 10px "Noto Sans", sans-serif;
+  }
+
+  #main_div > div {
+    margin: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 5px 17px;
+    width: auto;
+    height: auto;
+  }
+
+  #grid-sec {
+    width: 150px;
+    height: 150px;
+    font-size: 5px;
+  }
+
+  #lblWon {
+    font: normal bold 15px "Noto Sans", sans-serif;
+  }
+
+  #main_btn-div > button {
+    margin: auto;
+    padding: 5px 17px;
+    font: normal bold 10px "Noto Sans", sans-serif;
+  }
+}
