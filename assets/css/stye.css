@@ -325,7 +325,7 @@ i {
 
 }
 
-@media all and (orientation: landscape) and (min-width: 765px){
+@media all and (orientation: landscape) and (max-width: 765px){
   #load > img {
     width: 15%;
   }
