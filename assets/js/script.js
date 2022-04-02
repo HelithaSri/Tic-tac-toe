@@ -64,9 +64,11 @@ $("#grid-sec > div").click(function () {
 });
 
 $("#btnReset").click(function () {
+    soundEffect("btn");
     reset();
 });
 $("#btnNext").click(function(){
+    soundEffect("btn");
     nextRound();
 });
 
@@ -192,9 +194,13 @@ function check() {
     }
 }
 
+
+
 function checkWonOrDraw(key) {
     switch (key) {
         case "pX":
+            soundEffect("win");
+
             $("#grid-sec > div").css("pointer-events", "none");
             $("#lblWon").text("Player X Won");
             scoreX++;
@@ -202,6 +208,8 @@ function checkWonOrDraw(key) {
             break;
 
         case "pO":
+            soundEffect("win");
+
             $("#grid-sec > div").css("pointer-events", "none");
             $("#lblWon").text("Player O Won");
             scoreO++;
@@ -209,11 +217,41 @@ function checkWonOrDraw(key) {
             break;
 
         case "pD":
+            soundEffect("draw");
+
             $("#grid-sec > div").css("pointer-events", "none");
             $("#lblWon").text("DRAW");
             break;
         default:
             // $("#lblWon").text("WRONG");
+            break;
+    }
+}
+
+function soundEffect(state) {
+    let effect = new Audio();
+    switch (state) {
+        case "win":
+            effect.src = "assets/sound_effects/win-effect.wav";
+            effect.play();
+            break;
+
+        case "draw":
+            effect.src = "assets/sound_effects/draw-effect.wav";
+            effect.play();
+            break;
+
+        /* case "reset":
+            effect.src = "assets/sound_effects/reset-effect.wav";
+            effect.play();
+            break; */
+
+        case "btn":
+            effect.src = "assets/sound_effects/next-effect.wav";
+            effect.play();
+            break;
+
+        default:
             break;
     }
 }
