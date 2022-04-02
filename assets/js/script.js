@@ -8,6 +8,8 @@
 $("#scoreX").text("-");
 $("#scoreO").text("-");
 $("#lblWon").text("");
+$("#btnNext").prop("disabled",true);
+$("#btnNext").css("opacity",.5);
 
 /* let scoreX = $("#scoreX").text("-");
 let scoreO = $("#scoreO").text("-"); */
@@ -128,6 +130,8 @@ function nextRound() {
     $("#grid-sec > div").children().remove()
     $("#grid-sec > div").css("pointer-events", "auto");
     currentPlayer();
+    $("#btnNext").prop("disabled", true);
+    $("#btnNext").css("opacity", .5);
 
 }
 
@@ -205,6 +209,9 @@ function checkWonOrDraw(key) {
             $("#lblWon").text("Player X Won");
             scoreX++;
             $("#scoreX").text(scoreX);
+
+            $("#btnNext").prop("disabled", false);
+            $("#btnNext").css("opacity", 1);
             break;
 
         case "pO":
@@ -214,6 +221,9 @@ function checkWonOrDraw(key) {
             $("#lblWon").text("Player O Won");
             scoreO++;
             $("#scoreO").text(scoreO);
+
+            $("#btnNext").prop("disabled", false);
+            $("#btnNext").css("opacity", 1);
             break;
 
         case "pD":
@@ -221,6 +231,9 @@ function checkWonOrDraw(key) {
 
             $("#grid-sec > div").css("pointer-events", "none");
             $("#lblWon").text("DRAW");
+
+            $("#btnNext").prop("disabled", false);
+            $("#btnNext").css("opacity", 1);
             break;
         default:
             // $("#lblWon").text("WRONG");
