@@ -51,14 +51,14 @@ $("#grid-sec > div").click(function () {
             xoArray[indexId] = "X";
             player = 2;
             check();
-            checkWonOrDraw(z());
+            winOrDrawAction(isWinOrDraw());
         } else {
             $(`#${id}`).append(o);
             xoArray[indexId] = "O";
             player = 1;
             check();
             // checkWonOrDraw(check());
-            checkWonOrDraw(z());
+            winOrDrawAction(isWinOrDraw());
         }
     }
     currentPlayer();
@@ -135,8 +135,8 @@ function nextRound() {
 
 }
 
-function z() {
-    let ab = -1;
+function isWinOrDraw() {
+    let fullFill = -1; //All square is clicked, -1 = true and other false
 
     if (check() == "pX") {
         return "pX";
@@ -144,13 +144,14 @@ function z() {
         return "pO"
     }
 
+    // Check the array to find all div/square are clicked
     for (let i = 0; i < xoArray.length; i++) {
         if (xoArray[i] == "") {
-            ab++;
+            fullFill++;
             // console.log(ab);
             break;
         } else {
-            ab = -1;
+            fullFill = -1;
         }
         /* if (xoArray[i] != "") {
             console.log(true);
@@ -160,7 +161,7 @@ function z() {
             return false;
         } */
     }
-    if (ab == -1) {
+    if (fullFill == -1) {
         // winD++;
         return "pD";
     }
@@ -200,7 +201,7 @@ function check() {
 
 
 
-function checkWonOrDraw(key) {
+function winOrDrawAction(key) {
     switch (key) {
         case "pX":
             soundEffect("win");
