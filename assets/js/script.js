@@ -115,7 +115,9 @@ function reset() {
     xoArray = ["", "", "", "", "", "", "", "", ""];
     $("#grid-sec > div").children().remove()
     $("#grid-sec > div").css("pointer-events", "auto");
-
+    $("#btnNext").prop("disabled", true);
+    $("#btnNext").css("opacity", .5);
+    
     player = 1;
     scoreX = 0;
     scoreO = 0;
